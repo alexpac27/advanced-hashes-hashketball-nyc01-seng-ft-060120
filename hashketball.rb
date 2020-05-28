@@ -1,4 +1,12 @@
-# Write your code below game_hash
+def points_for(player_name)
+  game_hash[:home][:players].each do |player|
+    if player[:player_name] == player_name
+      return player[:points]
+    end
+  end
+end
+
+
 def game_hash
   {
     home: {
